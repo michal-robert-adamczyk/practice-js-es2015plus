@@ -1,14 +1,16 @@
 const btnCalculate = document.querySelector('.cart__btn-calculate');
 // console.log(btnCalculate);
-const InputList = document.getElementsByClassName('cart__item');
-const arr = [...InputList];
+// const InputList = document.getElementsByClassName('cart__item');
+// const arr = [...InputList];
 
 
 const test = (a) =>{
-    console.log('funkcja test działa', arr);
-    for each (el in arr) {
-        console.log(index);
-      }
+    
+    const list= document.getElementsByClassName("cart__item");
+    [].forEach.call(list, itteration = el => {
+        console.log(el.querySelector('input').dataset.price);
+
+    });
 } 
 
 
