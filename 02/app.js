@@ -6,19 +6,18 @@ const btnCalculate = document.querySelector('.cart__btn-calculate');
 const ArrayToSum = []
 
 
-const test = (a) =>{
+const test = x =>{
     
     const list= document.getElementsByClassName("cart__item");
     [].forEach.call(list, itteration = el => {
-        // console.log(el.querySelector('input').dataset.price*el.querySelector('input').value);
         ArrayToSum.push(el.querySelector('input').dataset.price*el.querySelector('input').value);
     });
-    console.log(ArrayToSum);
     const sum = ArrayToSum.reduce((prev, n) => {
        return prev + n;
     });
     console.log(sum);
-
+    const ToPay = document.querySelector('.cart__total-price')
+    ToPay.innerText=sum;
 } 
 
 
