@@ -1,7 +1,7 @@
-import Programmer from './classes/Programmer';
-import Junior from './classes/Junior';
-import Mid from './classes/Mid';
-import Senior from './classes/Senior';
+import Programmer from './classes/Programmer.js';
+import Junior from './classes/Junior.js';
+import Mid from './classes/Mid.js';
+import Senior from './classes/Senior.js';
 
 
 
@@ -17,12 +17,18 @@ const task = {
     size: 1,
 }
 
+
+
+
+
 const programmer = new Programmer( features );
+console.log(programmer);
 const time = programmer.getApproximateTimeTaskDoneInHours( task );
 console.log(time);
 
 
 const junior = new Junior();
+console.log(junior);
 const junitorTime = junior.getApproximateTimeTaskDoneInHours( task );
 console.log(junitorTime);
 
@@ -33,3 +39,4 @@ console.log(midTime);
 const senior = new Senior();
 const seniorTime = senior.getApproximateTimeTaskDoneInHours( task );
 console.log(seniorTime);
+

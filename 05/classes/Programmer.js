@@ -1,9 +1,9 @@
 export default class Programmer {
-    constructor( {skills = null, experience = null, willingness = null} ) {
+    constructor( skills, experience, willingness){ 
         this.skills = this.isNumber(skills) ? skills : this.getSkillsRandomNumber();
         this.experience = this.isNumber(experience) ? experience : this.getExperinceRandomNumber();
         this.willingness = this.isNumber(willingness) ? willingness : this.getWillingnessRandomNumber();
-    }
+    };
 
     isNumber(value) {
         if(
@@ -37,7 +37,7 @@ export default class Programmer {
     }
 
     getMinMaxWilligness() {
-        return [0, 100]
+        return [0, 100];
     }
 
     getRandomNumber(min, max) {

@@ -1,4 +1,4 @@
-import Programmer from './Programmer';
+import Programmer from './Programmer.js';
 
 export default class Junior extends Programmer {
 
@@ -11,6 +11,6 @@ export default class Junior extends Programmer {
     }
 
     getMinMaxWilligness() {
-        return [30, 70]
+        return [30, 70];
     }
 }
