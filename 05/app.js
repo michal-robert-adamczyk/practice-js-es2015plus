@@ -27,7 +27,7 @@ const time = programmer.getApproximateTimeTaskDoneInHours( task );
 console.log(time);
 
 
-const junior = new Junior({});
+const junior = new Junior();
 console.log(junior);
 const junitorTime = junior.getApproximateTimeTaskDoneInHours( task );
 console.log(junitorTime);
